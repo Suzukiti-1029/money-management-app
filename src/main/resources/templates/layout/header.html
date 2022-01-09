@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout"
+  layout:decorate="~{layout/layout}">
+
+<head>
+</head>
+
+<body>
+  <nav layout:fragment="header" class="navbar navbar-light sticky-top" style="background-color: orange;">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="/toppage">お金管理アプリ</a>
+      <div class="d-flex">
+        <div class="dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false">
+            ユーザ
+          </a>
+          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <li><a class="dropdown-item" href="#">アカウント編集</a></li>
+          </ul>
+        </div>
+        <a class="btn btn-outline-danger" href="#">ログアウト</a>
+      </div>
+    </div>
+  </nav>
+</body>
+
+</html>
