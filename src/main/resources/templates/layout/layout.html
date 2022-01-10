@@ -11,7 +11,10 @@
 
 <body>
   <nav layout:replace="~{layout/header::header}"></nav>
-  <div layout:replace="~{moneymanagement/index::content}"></div>
+  <main class="d-flex">
+    <nav layout:replace="~{layout/sideber::sideber}"></nav>
+    <div layout:replace="~{moneymanagement/index::content}"></div>
+  </main>
 
   <script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
 </body>
