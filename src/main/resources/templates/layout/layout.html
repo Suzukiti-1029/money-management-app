@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/web/thymeleaf/layout">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" th:href="@{/webjars/bootstrap/css/bootstrap.min.css}">
+  <link rel="stylesheet" href="@{/webjars/bootstrap-icons/font/bootstrap-icons.css}">
+</head>
+
+<body>
+  <nav layout:replace="~{layout/header::header}"></nav>
+  <main class="d-flex">
+    <nav layout:replace="~{layout/sideber::sideber}"></nav>
+    <div layout:replace="~{moneymanagement/index::content}"></div>
+  </main>
+
+  <script th:src="@{/webjars/bootstrap/js/bootstrap.bundle.min.js}"></script>
+</body>
+
+</html>
